@@ -1,0 +1,33 @@
+Git commands
+
+git --version           ( current git version installed )
+git help                ( gets help )
+git help add            ( gets help on the add command ) 
+clear                   ( clear terminal output )
+git config --list       ( all your settings )
+git config --global user.email "you@example.com"             ( add/edit email in settings)
+git config --global user.name "cameronmcnz"                  ( add/edit username in settings)
+
+Creating a folder FirstGitProject
+cd C:/Users/KMaharaj/Desktop/Udemy/FirstGitProject 
+
+Initialise git project
+git init                ( will get /.git/ subdirectory )
+git status              ( determine if it is a git project or not / check for changes in files / new files )
+touch hello_world.py    ( create file hello_world.py )
+ls                      ( list files in directory ) 
+
+
+					
+3 areas when working with git
+					working directory 
+					staging area  ( intermidiary place where add new/modified files)
+					repository
+					
+"commit is a snapshot of all the files in the staging area"		
+
+git add hello_world.py  ( track / document all changes - adding to staging area )
+git commit -m "My first GIT commit"          ( commiting a file )
+git log                                       ( will show commit history )
+			
+			
