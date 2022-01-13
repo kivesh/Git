@@ -31,3 +31,41 @@ git commit -m "My first GIT commit"          ( commiting a file )
 git log                                       ( will show commit history )
 			
 			
+git add .                                     ( add all modified files into the staging area)			
+git diff                    				  ( diff in the working directory and the tracked files that are in you repository )
+git diff <filename>
+git diff <commit keys a> <commit key b>
+
+Remove a file from the git repository ( completely ) 
+git rm <filename>
+git rm <filename1> <filename2>
+git rm -r <directory>                    ( remove subdirectory from repository )
+git ls-files                                   ( files in repository )
+
+Tagging - common ability used in most version control systems. To tag certain points of the repository during an history of commits
+        - product work feature release
+        - important points in the history of the repository / mark different releases 	
+
+git tag <tag-name>	
+git tag                ( shows all tags)
+git tag --list         ( shows all tags listed in alphabetical order ) 	
+git tag -l "*v*"       ( Search for tags - in this instance we are searching for v )  
+
+Tags types - annotated tag
+           - liteweighted tag
+
+git tag v2.2.1 -m "Descriptive Message of this 2.2 tag"            ( Annotated tag has a message logged against it )
+git show <tag-name>                     ( show all the information associated with this particular tag ) 
+git tag --delete <tag-name>             ( delete a particular tag ) 
+		   
+Unstaging a Staged File
+		   - used to only commit some of the files instead of all them
+		   
+git restore --staged <filename>
+git reset HEAD <filename>
+
+Revert modified files 
+           - caution to be used any local changes will be gone bye bye 
+git restore <filename>                ( unmodify file and take it back to the most recent commit )
+
+cat / vi / vim - works in git terminal
